@@ -544,9 +544,11 @@ iframe {
   border-radius: 45px;
   top: 50px;
   position: sticky;
-  position: -webkit-sticky;
   z-index: 10;
   padding-right: 17px;
+}
+.buttons-container {
+  position: -webkit-sticky;
 }
 .buttons-container ul {
   list-style: none;
