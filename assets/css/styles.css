@@ -544,6 +544,7 @@ iframe {
   border-radius: 45px;
   top: 50px;
   position: sticky;
+  position: -webkit-sticky;
   z-index: 10;
   padding-right: 17px;
 }
