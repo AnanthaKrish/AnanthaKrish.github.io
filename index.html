@@ -1,372 +1,686 @@
 <!DOCTYPE html>
-<html lang="en" class="lang=" en"">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Anantha Krishnan K G's Portfolio</title>
-  <link rel="shortcut icon" href="./images/favicon.ico">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Anantha Krishnan K G - My personal website">
-  <meta name="author" content="">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    Anantha Krishnan K G · Overview · Software Engineer [Swift, iOS, JS, Cloud]
+  </title>
+  <meta name="description" content="Anantha Krishnan K G's Resume" />
+  <meta name="keywords" content="GitHub Resume with Primer Design System CSS" />
+  <meta name="author" content="Anantha Krishnan K G" />
 
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-    crossorigin="anonymous">
-
-  <link rel="stylesheet" href="css/style.css">
-
+  <link rel="apple-touch-icon" href="./assets/favicon/favicon.svg" />
+  <link rel="icon" href="./assets/favicon/favicon.svg" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+  <link href="./css/primer-core.css" rel="stylesheet" />
+  <link href="./css/primer-product.css" rel="stylesheet" />
+  <link href="./css/style.css" rel="stylesheet" />
 </head>
 
 <body>
 
-  <body>
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li id="nav-about"><a href="#about">About</a></li>
-            <li id="nav-portfolio"><a href="#portfolio">Experience</a></li>
-            <li id="nav-contact"><a href="#contact">Contact</a></li>
-            <li id="nav-about"><a target="_blank" href="./resumePdf.html">Resume</a></li>
-            <li id="nav-about"><a target="_blank" href="https://www.youtube.com/channel/UCgKLJiw10LMb-J2st3uBtRA">YouTube</a></li>
-            <li id="nav-about"><a target="_blank" href="https://swiftdynamics.blogspot.com">Blog</a></li>
-            <li id="nav-about"><a target="_blank" href="https://medium.com/anantha-krishnan-k-g">Medium</a></li>
-          </ul>
-        </div>
-        <!--/.nav-collapse -->
+  <div class="bg-blue-light border-bottom stickyHeader">
+    <header class="main-content mx-auto p-responsive d-flex flex-wrap">
+      <div class="flex-auto d-flex flex-items-center flex-row pr-3">
+        <a href="#">
+          <span title="Label: green outline label" class="Label Label--outline Label--outline-green">
+            Anantha Krishnan K G
+          </span>
+        </a>
       </div>
-    </nav>
 
-    <!-- Begin page content -->
-    <div class="container-fluid">
-      <div id="about" class="row cover">
-        <div class="row">
-          <div class="col-md-6 text-center about-info">
-            <img class="img-circle text-center profile-img" src="./images/avatar.jpg">
-            <p class="text-center">Hello, my name is <b class="nameParagraph">Anantha Krishnan K G</b>,
-              I am a Software Engineer working for <b class="companyName">IBM ISL</b>, in Bangalore, India. I started
-              my career in 2014 as an iOS Applications developer and developed a strong foundation on Swift /
-              Objective-C languages. My interest in designing and developing engaging mobile applications is what drove
-              me to specialize in iOS application Development. I create SDKs and applications/websites in Swift,
-              Objective-C, Android, Hybrid (Cordova) and Web (NodeJs and JavaScript) for Cloud service in IBM Cloud.
-            </p>
-          </div>
+      <div class="flex-auto d-flex flex-items-center flex-row-reverse pr-3">
+        <a aria-label="GitHub" class="tooltipped tooltipped-se avatar-group-item" target="_blank"
+          href="https://github.com/Ananthakrish">
+          <img src="./assets/img/svg/mark-github.svg" class="mr-1" height="30" />
+        </a>
+        <a aria-label="Twitter" class="tooltipped tooltipped-se avatar-group-item" target="_blank"
+          href="https://twitter.com/Ananth_krish_KG?lang=en">
+          <img src="./assets/img/twitter.png" class="mr-1" height="30" />
+        </a>
+        <a aria-label="Medium" class="tooltipped tooltipped-se avatar-group-item" href="https://medium.com/@Anantha1992"
+          target="_blank">
+          <img src="./assets/img/medium.png" class="mr-1" height="30" />
+        </a>
+        <a aria-label="Instagram" class="tooltipped tooltipped-se avatar-group-item"
+          href="https://www.instagram.com/i_am_anantha" target="_blank">
+          <img src="./assets/img/instagram.png" class="mr-1" height="30" />
+        </a>
+        <a aria-label="LinkedIn" class="tooltipped tooltipped-se avatar-group-item"
+          href="https://in.linkedin.com/in/anantha-krishnan-kg-b975b789" target="_blank">
+          <img src="./assets/img/linkedin.png" class="mr-1" height="30" />
+        </a>
+
+        <a aria-label="Facebook" class="tooltipped tooltipped-se avatar-group-item"
+          href="https://www.facebook.com/anantha.krishnankg.18" target="_blank">
+          <img src="./assets/img/facebook.png" class="mr-1" height="30" />
+        </a>
+
+        <a aria-label="Youtube" class="tooltipped tooltipped-se avatar-group-item"
+          href="https://www.youtube.com/channel/UCgKLJiw10LMb-J2st3uBtRA" target="_blank">
+          <img src="./assets/img/youtube.png" class="mr-1" height="30" />
+        </a>
+
+        <a aria-label="Blog" class="tooltipped tooltipped-se avatar-group-item"
+          href="https://swiftdynamics.blogspot.com" target="_blank">
+          <img src="./assets/img/blogger.png" class="mr-1" height="30" />
+        </a>
+      </div>
+    </header>
+  </div>
+
+  <div class="main-content mx-auto px-3 p-responsive mt-4">
+    <div class="d-flex flex-justify-around flex-wrap column-container">
+      <section class="pr-3 mb-6 left-column">
+        <img class="avatar width-full rounded-2" src="./assets/img/ananthakrishnankg.jpg" alt="Anantha Krishnan K G" />
+        <div class="py-3 leftContainer">
+          <h1 class="text-bold summary-name">Anantha Krishnan K G</h1>
+          <h2 class="f3-light text-gray summary-subtitle ">
+            Senior Software Engineer
+          </h2>
         </div>
-        <div class="row">
-          <div class="col-md-6 about-tools">
-            <p class="text-center">MY SKILLS</p>
-            <div class="col-xs-4">
-              <ul>
-                <li>Swift</li>
-                <li>Objective-C</li>
-                <li>Android</li>
-                <li>Carthage</li>
-                <li>Cocoapods</li>
-                <li>Javascript & Nodejs</li>
-                <li>ARKit,Core ML & OCR</li>
-                <li>Scrum</li>
-              </ul>
-            </div>
-            <div class="col-xs-4">
-              <ul>
-                <li>Cordova</li>
-                <li>AngularJs</li>
-                <li>REST & SOAP</li>
-                <li>Kubernetes</li>
-                <li>Cloud Foundry</li>
-                <li>Docker</li>
-                <li>GitHub & BitBucket</li>
-                <li>D3, Express</li>
-              </ul>
-            </div>
-
-            <div class="col-xs-4">
-              <ul>
-                <li>Firebase</li>
-                <li>IBM Cloud</li>
-                <li>Microsoft Azure</li>
-                <li>AWS</li>
-                <li>Heroku</li>
-                <li>Serverless Functions</li>
-                <li>Server-Side Swift</li>
-                <li>Kitura & Vapor</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div><!-- End #About -->
-
-      <div id="portfolio" class="row cover">
-        <h3 class="text-center">WORK EXPERIENCE</h3>
-        <div class="divPageSubHeader">
-
-          <div class="customWrapper">
-
-            <div class="light-gray">
-              <div class="light-gray">
-                <div class="row experience">
-                  <div class="experienceClassCol col-sm-4 ">
-                    <div class="cardWrap">
-                      <div class="card experience-content">
-                        <div class="firstHalf">
-                          <h2 class="cardHeaders">S​oftware Engineer</h2>
-                          <div class="cardLocationDiv">IBM ISL PVT LTD, Bangalore</div>
-                          <div class="cardDateDiv">Aug 2015 - Present</div>
-                        </div>
-                        <div class="secondHalf">
-                          <p class="cardParagraphs">I am part of IBM Cloud Push Notifications service team and
-                            responsible for Swift , Android and Cordova mobile SDKs , Server SDKs (in Swift, Java and
-                            Nodejs) and front-end UI (Dashboard - AngularJs & NodeJs) for the push service. I have
-                            developed and handling the complete OpenWhisk(IBM functions) support for Push
-                            notifications. I have written numerous samples and blogs and use-case scenarios for
-                            customers and conferences.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="experienceClassCol col-sm-4 ">
-                    <div class="cardWrap">
-                      <div class="card experience-content">
-                        <div class="firstHalf">
-                          <h2 class="cardHeaders">iOS Application Developer</h2>
-                          <div class="cardLocationDiv">Appillary Solutions LLP,B ​angalore</div>
-                          <div class="cardDateDiv">Nov 2014 - Aug 2015</div>
-                        </div>
-                        <div class="secondHalf">
-                          <p class="cardParagraphs">As a part of core team member I have designed and developed 5+ iOS
-                            mobile applications. Oversaw major new enhancements to existing iOS applications .
-                            Strengthened developmental methodologies by introducing a code quality document, Unit tests
-                            and UI tests.</p>
-                        </div>
-
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="experienceClassCol col-sm-4 ">
-                    <div class="cardWrap">
-                      <div class="card experience-content">
-                        <div class="firstHalf">
-                          <h2 class="cardHeaders">iOS Application Developer Trainee</h2>
-                          <div class="cardLocationDiv">AppZoc,​ Cochin​</div>
-                          <div class="cardDateDiv">Aug 2014 - OCT 2014</div>
-                        </div>
-                        <div class="secondHalf">
-                          <p class="cardParagraphs">I was part of paid training team in iOS Application development. We
-                            have worked on several core concepts and developed two successful applications in
-                            Objective-C
-                            and published to AppStore.</p>
-                        </div>
-
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div><br /></div>
-              <div><br /></div>
-              <div><br /></div>
-            </div>
-          </div>
-        </div>
-      </div><!-- End #Portfolio -->
-
-
-      <div id="portfolio" class="row cover">
-        <h3 class="text-center">CHECK OUT SOME OF MY WORKS</h3>
-        <div class="divPageSubHeader">
-          <div class="customWrapper">
-
-            <div class="light-gray">
-              <div class="light-gray">
-                <div class="row experience">
-                  <div class="experienceClassCol col-sm-4 ">
-                    <div class="cardWrap">
-
-                      <div class="card experience-content">
-                        <div class="firstHalf">
-                          <a target="_blank" href="https://github.com/AnanthaKrish">
-                            <h2 class="cardHeaders">Open Source Projects</h2>
-                          </a>
-                          <div class="cardLocationDiv">​IBM Open Source projects and others</div>
-                        </div>
-                        <div class="secondHalf">
-                          <p class="cardParagraphs">I am contributing to the IBM Cloud Open Source SDKs and Samples . I
-                            have my own repos as well for the personal
-                            development. <a target="_blank" href="https://github.com/AnanthaKrish" class="appLink">See more</a></p>
-                        </div>
-
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="experienceClassCol col-sm-4 ">
-                    <div class="cardWrap">
-                      <div class="card experience-content">
-
-                          <div class="firstHalf">
-                              <a target="_blank" href="https://itunes.apple.com/in/app/pushsender/id1423663430?mt=12">
-                                <h2 class="cardHeaders">PushSender​</h2>
-                              </a>
-                              <div class="cardLocationDiv">​MacOS application, Side project</div>
-                            </div>
-                            <div class="secondHalf">
-                                <p class="cardParagraphs">Push Sender will help you to send push notification to your iOS ,
-                                    Android , Cordova mobile applications and to
-                                    websites for Chrome , Firefox, Chrome Apps & Extension and Safari browsers. <a target="_blank" href="https://itunes.apple.com/in/app/pushsender/id1423663430?mt=12" class="appLink">See more</a></p>
-                            </div>                        
-                      </div>
-                    </div>
-                  </div>
-                  <div class="experienceClassCol col-sm-4 ">
-                    <div class="cardWrap">
-                      <div class="card experience-content">
-                          <div class="firstHalf">
-                              <a target="_blank" href="https://itunes.apple.com/in/app/workapps-chat/id1068382719">
-                                <h2 class="cardHeaders">WorkApps Chat​</h2>
-                              </a>
-                              <div class="cardLocationDiv">​iOS application, Appillary Solutions</div>
-                            </div>
-                            <div class="secondHalf">
-                                <p class="cardParagraphs">For all your one-on-one communication. It's Simple, Quick & Easy and
-                                    has your colleagues automatically loaded
-                                    when you login. It also connects you to the various departments of your Company with a single
-                                    touch. <a target="_blank" href="https://itunes.apple.com/in/app/workapps-chat/id1068382719" class="appLink">See more</a></p>
-                            </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="experienceClassCol col-sm-4 ">
-                    <div class="cardWrap">
-                      <div class="card experience-content">
-                          <div class="firstHalf">
-                              <a target="_blank" href="https://itunes.apple.com/in/app/workapps/id1046809441">
-                                <h2 class="cardHeaders">WorkApps​</h2>
-                              </a>
-                              <div class="cardLocationDiv">i​OS application, Appillary Solutions</div>
-                            </div>
-                            <div class="secondHalf">
-                                <p class="cardParagraphs">WorkApps is a work management platform where users can manage their
-                                    tasks, collaborate on projects, communicate effective with their teams and track & extract
-                                    reports on key metrics, which help stakeholders make the right decisions. <a target="_blank" href="https://itunes.apple.com/in/app/workapps/id1046809441" class="appLink">See more</a></p>
-                            </div>                        
-                      </div>
-                    </div>
-                  </div>
-                  <div class="experienceClassCol col-sm-4 ">
-                    <div class="cardWrap">
-                      <div class="card experience-content">
-                          <div class="firstHalf">
-                              <a target="_blank" href="https://itunes.apple.com/in/app/moviebuddy/id1030273055">
-                                <h2 class="cardHeaders">MovieBuddy​</h2>
-                              </a>
-                              <div class="cardLocationDiv"> i​OS application, Appillary Solutions</div>
-                            </div>
-                            <div class="secondHalf">
-                                <p class="cardParagraphs">MovieBuddy k​eep you updated with up coming movies, latest releases
-                                    and blockbusters.You can see ratings and reviews from your very own people like family,
-                                    friends, colleagues and send your recommendations to them as well. It allows you to watch
-                                    trailers & songs, share your experience on FB and even plan a movie date with friends. <a target="_blank" href="https://itunes.apple.com/in/app/moviebuddy/id1030273055" class="appLink">See more</a></p>
-                            </div>                        
-                      </div>
-                    </div>
-                  </div>
-                  <div class=" experienceClassCol col-sm-4 ">
-                    <div class="cardWrap">
-                      <div class="card experience-content">
-                          <div class="firstHalf">
-                              <a target="_blank" href="https://itunes.apple.com/au/app/tithi/id1026862217">
-                                <h2 class="cardHeaders">Tithi​</h2>
-                              </a>
-                              <div class="cardLocationDiv">i​OS application, Appillary Solutions</div>
-                            </div>
-                            <div class="secondHalf">
-                                <p class="cardParagraphs">Tithi ​is the cool app to keep track of all the Indian festivals,
-                                    special holidays and astronomical events through the year. It provides interesting
-                                    information on every festival/ event and also allows quick filtering on dates and search
-                                    text. You can also add the event in your calendar and send a wish or an e-Card to friends and
-                                    family.<a target="_blank" href="https://itunes.apple.com/au/app/tithi/id1026862217" class="appLink">See more</a></p>
-                            </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="experienceClassCol col-sm-4 ">
-                    <div class="cardWrap">
-                      <div class="card experience-content">
-                          <div class="firstHalf">
-                              <a target="_blank" href="https://itunes.apple.com/in/app/nucleus-premium-properties/id878540707?mt=8">
-                                <h2 class="cardHeaders">Nucleus</h2>
-                              </a>
-                              <div class="cardLocationDiv">i​OS application, AppZoc</div>
-                            </div>
-                            <div class="secondHalf">
-                                <p class="cardParagraphs">Nucleus Premium Properties is a Kochi-based builder and real estate
-                                    developer with interests in building apartment, villa projects and developing land for
-                                    construction. Nucleus App will give the users the latest news regarding new project features
-                                    and other services of Nucleus Properties. <a target="_blank" href="https://itunes.apple.com/in/app/nucleus-premium-properties/id878540707?mt=8" class="appLink">See more</a></p>
-                            </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="clearfix paddBottom30"></div>
-            </div>
-          </div>
-        </div>
-      </div><!-- End #Works -->
-    </div>
-
-
-
-
-    <div id="contact" class="row cover bottom">
-      <h2 class="text-center contact-header">Contact Me</h2>
-      <p class="text-center contact-email">Get in touch with me <i class="fas fa-arrow-circle-right"></i>
-        ananthanmymail@gmail.com</p>
-      <div class="text-center contact-social-icons">
-        <p>Or find me on:</p>
-        <ul class="centered">
-          <a target="_blank" href="https://www.linkedin.com/in/anantha-krishnan-kg-b975b789/">
-            <li><i class="fab fa-linkedin"></i> LinkedIn</li>
-          </a>
-          <a target="_blank" href="https://github.com/AnanthaKrish">
-            <li><i class="fab fa-github-square"></i> GitHub</li>
-          </a>
-          <a target="_blank" href="https://medium.com/@Anantha1992">
-            <li><i class="fab fa-medium"></i> Medium</li>
-          </a>
-          <a target="_blank" href="https://swiftdynamics.blogspot.com/">
-            <li><i class="fab fa-blogger"></i> Blog</li>
-          </a>
-          <a target="_blank" href="https://www.youtube.com/channel/UCgKLJiw10LMb-J2st3uBtRA">
-            <li><i class="fab fa-youtube-square"></i> YouTube</li>
-          </a>
-          <a target="_blank" href="https://twitter.com/Ananth_krish_KG">
-            <li><i class="fab fa-twitter-square"></i> Twitter</li>
-          </a>
-          <a target="_blank" href="https://www.facebook.com/anantha.krishnankg.18">
-            <li><i class="fab fa-facebook-square"></i> Facebook</li>
-          </a>
+        <ul class="d-flex flex-wrap flex-justify-evenly flex-items-center list-style-none">
+          <li class="summary-toolkit p-1 interestList rounded-1 my-1 mr-1 text-white f6 orange-500">
+            iOS (Swift & ObjC)
+          </li>
+          <li class="summary-toolkit p-1 interestList rounded-1 my-1 mr-1 text-white f6 yellow-900">
+            JavaScript
+          </li>
+          <li class="summary-toolkit p-1 interestList rounded-1 my-1 mr-1 text-white f6 blue-800">
+            AI & ML
+          </li>
+          <li class="summary-toolkit p-1 interestList rounded-1 my-1 mr-1 text-white f6 orange-700">
+            Cloud
+          </li>
         </ul>
         </p>
+        <ul class="list-style-none border-top border-gray-light py-3">
+          <li class="d-flex flex-row flex-items-center flex-justify-start pt-1">
+            <svg aria-label="organization" class="ml-1 mr-2" width="16" height="16" viewBox="0 0 16 16" role="img"
+              style="min-width: 16px">
+              <path fill="#586069" fill-rule="evenodd"
+                d="M16 12.999c0 .439-.45 1-1 1H7.995c-.539 0-.994-.447-.995-.999H1c-.54 0-1-.561-1-1 0-2.634 3-4 3-4s.229-.409 0-1c-.841-.621-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.442.58 2.5 3c.058 2.41-.159 2.379-1 3-.229.59 0 1 0 1s1.549.711 2.42 2.088C9.196 9.369 10 8.999 10 8.999s.229-.409 0-1c-.841-.62-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.437.581 2.495 3c.059 2.41-.158 2.38-1 3-.229.59 0 1 0 1s3.005 1.366 3.005 4z" />
+            </svg>
+            <span>IBM India Software Labs</span>
+          </li>
+          <li class="d-flex flex-row flex-items-center flex-justify-start pt-1">
+            <svg aria-label="organization" class="mr-2" width="12" height="16" viewBox="0 0 12 16" role="img"
+              style="min-width: 16px; margin-left: 4px;">
+              <path fill="#586069" fill-rule="evenodd"
+                d="M6 0C2.69 0 0 2.5 0 5.5 0 10.02 6 16 6 16s6-5.98 6-10.5C12 2.5 9.31 0 6 0zm0 14.55C4.14 12.52 1 8.44 1 5.5 1 3.02 3.25 1 6 1c1.34 0 2.61.48 3.56 1.36.92.86 1.44 1.97 1.44 3.14 0 2.94-3.14 7.02-5 9.05zM8 5.5c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
+            </svg>
+            Bengaluru, India.
+          </li>
+          <li class="d-flex flex-row flex-items-center flex-justify-start pt-1">
+            <svg aria-label="link" class="ml-1 mr-2" width="16" height="16" viewBox="0 0 16 16" role="img"
+              style="min-width: 16px">
+              <path fill="#586069" fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z" />
+            </svg>
+            <a href="https://github.com/Ananthakrish" target="_blank">
+              github.com/Ananthakrish</a>
+          </li>
+        </ul>
+        <div class="border-top py-3 pr-3">
+        </div>
+      </section>
 
-      </div><!-- End #Contact -->
+      <div class="pb-4 pl-2">
+        <nav class="UnderlineNav">
+          <div class="UnderlineNav-body">
+            <a href="#" title="Experiences" class="UnderlineNav-item selected">Experience</a>
+            <a href="#skills" title="Skills" class="UnderlineNav-item">Skills
+            </a>
+            <a href="#apps" title="Apps" class="UnderlineNav-item">Apps
+            </a>
+            <a href="./resumePdf.html" target="_blank" title="resume" class="UnderlineNav-item">My Resume
+            </a>
+          </div>
+        </nav>
+        <section class="mt-4" aria-labelledby="section-1-header">
+          <ul class="d-flex flex-column list-style-none mb-1">
+            <div class="d-flex flex-wrap flex-justify-between pinned-list">
+              <li class="d-flex p-3 mb-3 mr-2 border border-gray-dark rounded-1 pinned-item">
+                <div class="flex-column">
+                  <h5 class="text-bold blue-500-text">
+                    Senior Software Engineer
 
-    </div>
+                  </h5>
+                  <span class="Label bg-blue">IBM ISL</span>
+                  <p class="text-gray text-small d-block mt-2 mb-3">
+                    Working on the mobile and web SDKs & applications as part of the IBM Cloud Push Notifications
+                    service team.
+                  </p>
+                  <div class="d-flex flex-row flex-justify-start">
+                    <div class="mr-3">
+                      <span class="language-indicator position-relative d-inline-block red-400"></span>
+                      <small class="f6 text-gray">Mobile & Web</small>
+                    </div>
+                    <div class="mr-3 d-flex flex-items-center">
+                      <img src="./assets/img/cloud.png" class="mr-1" height="16" />
+                      <small class="f6 text-gray">Cloud</small>
+                    </div>
+                    <div class="d-flex flex-items-center">
+                      <svg aria-label="calendar" class="mr-1" width="14" height="16" viewBox="0 0 14 16" role="img">
+                        <path style="fill:#586069" fill-rule="evenodd"
+                          d="M13 2h-1v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H6v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H2c-.55 0-1 .45-1 1v11c0 .55.45 1 1 1h11c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 12H2V5h11v9zM5 3H4V1h1v2zm6 0h-1V1h1v2zM6 7H5V6h1v1zm2 0H7V6h1v1zm2 0H9V6h1v1zm2 0h-1V6h1v1zM4 9H3V8h1v1zm2 0H5V8h1v1zm2 0H7V8h1v1zm2 0H9V8h1v1zm2 0h-1V8h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1zm2 0h-1v-1h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1z" />
+                      </svg>
+                      <small class="f6 text-gray">2015 - now</small>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="d-flex p-3 mb-3 mr-2 border border-gray-dark rounded-1 pinned-item">
+                <div class="flex-column">
+                  <h5 class="text-bold blue-500-text">
+                    iOS Applications developer
+                  </h5>
+                  <span class="Label bg-blue">Appillary Solutions LLP</span>
+                  <p class="text-gray text-small d-block mt-2 mb-3">
+                    Worked across many iOS applications as part of the core engineering team.
+                  </p>
+                  <div class="d-flex flex-row flex-justify-start">
+                    <div class="mr-3">
+                      <span class="language-indicator position-relative d-inline-block red-400"></span>
+                      <small class="f6 text-gray">iOS Apps</small>
+                    </div>
+                    <div class="mr-3 d-flex flex-items-center">
+                      <svg aria-label="mobile" class="ml-1 mr-1" width="20" height="20" viewBox="0 0 20 20" role="img"
+                        style="min-width: 16px">
+                        <path fill="#586069" fill-rule="mobile"
+                          d="M10,15.654c-0.417,0-0.754,0.338-0.754,0.754S9.583,17.162,10,17.162s0.754-0.338,0.754-0.754S10.417,15.654,10,15.654z M14.523,1.33H5.477c-0.833,0-1.508,0.675-1.508,1.508v14.324c0,0.833,0.675,1.508,1.508,1.508h9.047c0.833,0,1.508-0.675,1.508-1.508V2.838C16.031,2.005,15.356,1.33,14.523,1.33z M15.277,17.162c0,0.416-0.338,0.754-0.754,0.754H5.477c-0.417,0-0.754-0.338-0.754-0.754V2.838c0-0.417,0.337-0.754,0.754-0.754h9.047c0.416,0,0.754,0.337,0.754,0.754V17.162zM13.77,2.838H6.23c-0.417,0-0.754,0.337-0.754,0.754v10.555c0,0.416,0.337,0.754,0.754,0.754h7.539c0.416,0,0.754-0.338,0.754-0.754V3.592C14.523,3.175,14.186,2.838,13.77,2.838z M13.77,13.77c0,0.208-0.169,0.377-0.377,0.377H6.607c-0.208,0-0.377-0.169-0.377-0.377V3.969c0-0.208,0.169-0.377,0.377-0.377h6.785c0.208,0,0.377,0.169,0.377,0.377V13.77z" />
+                      </svg>
+                      <small class="f6 text-gray">Mobile</small>
+                    </div>
+                    <div class="d-flex flex-items-center">
+                      <svg aria-label="calendar" class="mr-1" width="14" height="16" viewBox="0 0 14 16" role="img">
+                        <path style="fill:#586069" fill-rule="evenodd"
+                          d="M13 2h-1v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H6v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H2c-.55 0-1 .45-1 1v11c0 .55.45 1 1 1h11c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 12H2V5h11v9zM5 3H4V1h1v2zm6 0h-1V1h1v2zM6 7H5V6h1v1zm2 0H7V6h1v1zm2 0H9V6h1v1zm2 0h-1V6h1v1zM4 9H3V8h1v1zm2 0H5V8h1v1zm2 0H7V8h1v1zm2 0H9V8h1v1zm2 0h-1V8h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1zm2 0h-1v-1h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1z" />
+                      </svg>
+                      <small class="f6 text-gray">2014 - 2015</small>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </div>
+            <div class="d-flex flex-wrap flex-justify-between pinned-list">
+              <li class="d-flex p-3 mb-3 mr-2 border border-gray-dark rounded-1 pinned-item">
+                <div class="flex-column">
+                  <h5 class="text-bold blue-500-text">
+                    iOS Application developer, trainee
+                  </h5>
+                  <span class="Label bg-blue">AppZoc</span>
+                  <p class="text-gray text-small d-block mt-2 mb-3">
+                    As part of iOS Application development training, I have worked on several core concepts in
+                    Objective-C.
+                  </p>
+                  <div class="d-flex flex-row flex-justify-start">
+                    <div class="mr-3">
+                      <span class="language-indicator position-relative d-inline-block red-400"></span>
+                      <small class="f6 text-gray">iOS Apps trainee</small>
+                    </div>
+                    <div class="mr-3 d-flex flex-items-center">
+                      <svg aria-label="rocket" class="mr-1" width="20" height="20" viewBox="0 0 20 20" role="img">
+                        <path style="fill:#586069" fill-rule="evenodd"
+                          d="M10,15.654c-0.417,0-0.754,0.338-0.754,0.754S9.583,17.162,10,17.162s0.754-0.338,0.754-0.754S10.417,15.654,10,15.654z M14.523,1.33H5.477c-0.833,0-1.508,0.675-1.508,1.508v14.324c0,0.833,0.675,1.508,1.508,1.508h9.047c0.833,0,1.508-0.675,1.508-1.508V2.838C16.031,2.005,15.356,1.33,14.523,1.33z M15.277,17.162c0,0.416-0.338,0.754-0.754,0.754H5.477c-0.417,0-0.754-0.338-0.754-0.754V2.838c0-0.417,0.337-0.754,0.754-0.754h9.047c0.416,0,0.754,0.337,0.754,0.754V17.162zM13.77,2.838H6.23c-0.417,0-0.754,0.337-0.754,0.754v10.555c0,0.416,0.337,0.754,0.754,0.754h7.539c0.416,0,0.754-0.338,0.754-0.754V3.592C14.523,3.175,14.186,2.838,13.77,2.838z M13.77,13.77c0,0.208-0.169,0.377-0.377,0.377H6.607c-0.208,0-0.377-0.169-0.377-0.377V3.969c0-0.208,0.169-0.377,0.377-0.377h6.785c0.208,0,0.377,0.169,0.377,0.377V13.77z" />
+                      </svg>
+                      <small class="f6 text-gray">Mobile</small>
+                    </div>
+                    <div class="d-flex flex-items-center">
+                      <svg aria-label="calendar" class="mr-1" width="14" height="16" viewBox="0 0 14 16" role="img">
+                        <path style="fill:#586069" fill-rule="evenodd"
+                          d="M13 2h-1v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H6v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H2c-.55 0-1 .45-1 1v11c0 .55.45 1 1 1h11c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 12H2V5h11v9zM5 3H4V1h1v2zm6 0h-1V1h1v2zM6 7H5V6h1v1zm2 0H7V6h1v1zm2 0H9V6h1v1zm2 0h-1V6h1v1zM4 9H3V8h1v1zm2 0H5V8h1v1zm2 0H7V8h1v1zm2 0H9V8h1v1zm2 0h-1V8h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1zm2 0h-1v-1h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1z" />
+                      </svg>
+                      <small class="f6 text-gray">2014 (3 months)</small>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <a id="skills"></a>
+              <li class="d-flex p-3 mb-3 mr-2 border border-gray-dark rounded-1 pinned-item">
+                <div class="flex-column">
+                  <h5 class="text-bold blue-500-text">
+                    OpenSource projects
+                  </h5>
+                  <span class="Label bg-blue">OpenSource</span>
+                  <p class="text-gray text-small d-block mt-2 mb-3">
+                    I started contributing to Swift, Objective-C , Android and nodeJs projects from 2015.
+                  </p>
+                  <div class="d-flex flex-row flex-justify-start">
+                    <div class="mr-3">
+                      <span class="language-indicator position-relative d-inline-block green-400"></span>
+                      <small class="f6 text-gray">OpenSource</small>
+                    </div>
+                    <div class="mr-3 d-flex flex-items-center">
+                      <svg aria-label="megaphone" class="mr-1" width="16" height="16" viewBox="0 0 16 16" role="img">
+                        <path fill="#586069" fill-rule="evenodd"
+                          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                      </svg>
+                      <small class="f6 text-gray">Git</small>
+                    </div>
+                    <div class="d-flex flex-items-center">
+                      <svg aria-label="calendar" class="mr-1" width="14" height="16" viewBox="0 0 14 16" role="img">
+                        <path style="fill:#586069" fill-rule="evenodd"
+                          d="M13 2h-1v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H6v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H2c-.55 0-1 .45-1 1v11c0 .55.45 1 1 1h11c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 12H2V5h11v9zM5 3H4V1h1v2zm6 0h-1V1h1v2zM6 7H5V6h1v1zm2 0H7V6h1v1zm2 0H9V6h1v1zm2 0h-1V6h1v1zM4 9H3V8h1v1zm2 0H5V8h1v1zm2 0H7V8h1v1zm2 0H9V8h1v1zm2 0h-1V8h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1zm2 0h-1v-1h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1z" />
+                      </svg>
+                      <small class="f6 text-gray">2015</small>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </section>
+        <section class="mt-1" aria-labelledby="section-2-header">
+          <a></a>
+          <h3 id="section-2-header" class="Subhead-heading mb-2 text-normal">
+            Skills
+          </h3>
+          <div class="border-top py-3 pr-3">
+            <ul class="d-flex flex-wrap flex-justify-evenly flex-items-center list-style-none">
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 f6 text-bold yellow-600">
+                Swift
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 f6 text-white text-bold yellow-900">
+                Server-Side Swift
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1y mr-1 text-white text-bold f6 gray-700">
+                Objective-C
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 text-white  text-bold f6 purple-500">
+                ARKit & CoreML
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 text-white  text-bold f6 gray-700">
+                OCR
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 text-white  text-bold f6 blue-500">
+                CoreData
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 text-white text-bold f6 yellow-900">
+                mapKit
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 f6 text-white text-bold orange-500">
+                openCV
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 text-white text-bold f6 red-600">
+                JavaScript
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 text-bold f6 blue-400">
+                Android
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1  text-bold f6 yellow-400">
+                NodeJS
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 text-bold text-white f6 blue-500">
+                React Native
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 text-bold text-white f6 red-300">
+                Cordova
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 f6 text-bold yellow-600">
+                MVC
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1y mr-1 text-white text-bold f6 gray-700">
+                MVVM
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 text-white  text-bold f6 purple-500">
+                MVP
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 text-white  text-bold f6 blue-500">
+                Coordinator pattern
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 text-white text-bold f6 yellow-900">
+                REST & SOAP
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 f6 text-white text-bold orange-500">
+                Serverless functions
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 text-white text-bold f6 red-600">
+                IBM Cloud
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 text-bold f6 blue-400">
+                AZURE
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1  text-bold f6 yellow-400">
+                Firebase
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 text-bold text-white f6 blue-500">
+                AWS
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 text-bold text-white f6 red-300">
+                GitHub
+              </li>
 
-    <footer class="footer">
-      <div class="container">
-        <p class="footertext">Made with <span class="heart-icon">❤ </span><a class="nameFooter" href="#about">by
-            Anantha Krishnan K G</a></p>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 f6 text-bold yellow-600">
+                GitLab
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1y mr-1 text-white text-bold f6 gray-700">
+                BitBucket
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 text-white  text-bold f6 purple-500">
+                Carthage
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 text-white  text-bold f6 blue-500">
+                Cocoapods
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 text-white  text-bold f6 blue-500">
+                NPM
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 text-white text-bold f6 yellow-900">
+                Scrum
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 f6 text-white text-bold orange-500">
+                Sprint
+              </li>
+            </ul>
+          </div>
+          <a id="apps"></a>
+          <div class="py-1 pr-1">
+            <ul class="d-flex flex-wrap flex-justify-evenly flex-items-center list-style-none">
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 text-white text-bold f6 purple-500">
+                Xcode
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 text-white text-bold f6 blue-500">
+                Android Studio
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 text-white text-bold f6 yellow-900">
+                VSCode
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 f6 text-bold orange-500">
+                AdobeXD
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 f6 text-bold yellow-500">
+                Sketch
+              </li>
+              <li class="summary-toolkit p-2 rounded-1 my-1 mr-1 f6 text-bold green-400">
+                After Effects
+              </li>
+            </ul>
+          </div>
+        </section>
 
+        <section class="mt-1" aria-labelledby="section-3-header">
+          <h3 id="section-3-header" class="Subhead-heading mb-2 text-normal">
+            Apps
+          </h3>
+          <div class="border-top py-3 pr-3">
+            <ul class="d-flex flex-column list-style-none mb-1">
+              <div class="d-flex flex-wrap flex-justify-between pinned-list">
+
+                <li class="appLi">
+                  <div class="card 1">
+                    <div class="card_image"> <img src="./assets/img/bg/bg16.jpg" /> </div>
+                    <div class="contact">
+                      <div class="content flex-column">
+                        <img src="./assets/img/ibm.png" alt="">
+                        <aside>
+                          <div class="flex-column">
+                            <a href="https://github.com/ibm-bluemix-mobile-services" target="_blank" class="appLink">
+                              <h1 class="appName">IBM Apps&SDKs </h1>
+                            </a>
+                            <span class="Label bg-green app_type">IBM ISL</span>
+                          </div>
+                          <p>I am contributing to the IBM Cloud Open Source SDKs and Samples . I have my own repos as
+                            well for the personal
+                            development.</p>
+                        </aside>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="appLi">
+                  <div class="card 1">
+                    <div class="card_image"> <img src="./assets/img/bg/bg.jpg" /> </div>
+                    <div class="contact">
+                      <div class="content flex-column">
+                        <img src="./assets/img/qreads.png" alt="">
+                        <aside>
+                          <div class="flex-column">
+                            <a href="https://itunes.apple.com/in/app/qreads/id1445674458?ls=1&mt=8" target="_blank"
+                              class="appLink">
+                              <h1 class="appName">QREADS </h1>
+                            </a>
+                            <span class="Label bg-blue app_type">Personal</span>
+                          </div>
+                          <p>Store all your bookmarks at one place and read it at anytime.</p>
+                        </aside>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="appLi">
+                  <div class="card 1">
+                    <div class="card_image"> <img src="./assets/img/bg/bg4.jpg" /> </div>
+                    <div class="contact">
+                      <div class="content flex-column">
+                        <img src="./assets/img/bmitracker.png" alt="">
+                        <aside>
+                          <div class="flex-column">
+                            <a href="https://itunes.apple.com/in/app/bmi-tracker/id1459398743" target="_blank"
+                              class="appLink">
+                              <h1 class="appName">BMI Tracker</h1>
+                            </a>
+                            <span class="Label bg-blue app_type">Personal</span>
+                          </div>
+                          <p>An application to get your BMI checked.</p>
+                        </aside>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="appLi">
+                  <div class="card 1">
+                    <div class="card_image"> <img src="./assets/img/bg/bg7.jpg" /> </div>
+                    <div class="contact">
+                      <div class="content flex-column">
+                        <img src="./assets/img/pushsender.png" alt="">
+                        <aside>
+                          <div class="flex-column">
+                            <a href="https://itunes.apple.com/in/app/pushsender/id1423663430?mt=12" target="_blank"
+                              class="appLink">
+                              <h1 class="appName">PushSender​</h1>
+                            </a>
+                            <span class="Label bg-blue app_type">Personal</span>
+                          </div>
+                          <p>A mac application to send push notifications</p>
+                        </aside>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="appLi">
+                  <div class="card 1">
+                    <div class="card_image"> <img src="./assets/img/bg/bg1.jpg" /> </div>
+                    <div class="contact">
+                      <div class="content flex-column">
+                        <img src="./assets/img/workapps.png" alt="">
+                        <aside>
+                          <div class="flex-column">
+                            <a href="https://itunes.apple.com/in/app/workapps/id1046809441" target="_blank"
+                              class="appLink">
+                              <h1 class="appName">WorkApps​</h1>
+                            </a>
+                            <span class="Label bg-red app_type">Appillary</span>
+                          </div>
+                          <p class="">WorkApps is a work management platform where users can manage their tasks,
+                            collaborate on projects, communicate ​ e​ ffectively with their teams and track & extract
+                            reports on key metrics, which help stakeholders make the right decisions.</p>
+                        </aside>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="appLi">
+                  <div class="card 1">
+                    <div class="card_image"> <img src="./assets/img/bg/bg5.jpg" /> </div>
+                    <div class="contact">
+                      <div class="content flex-column">
+                        <img src="./assets/img/moviewbuddy.png" alt="">
+                        <aside>
+                          <div class="flex-column">
+                            <a href="https://itunes.apple.com/in/app/moviebuddy/id1030273055" target="_blank"
+                              class="appLink">
+                              <h1 class="appName">MovieBuddy</h1>
+                            </a>
+                            <span class="Label bg-red app_type">Appillary</span>
+                          </div>
+                          <p class="">MovieBuddy k​eep you updated with upcoming movies,latest releases and
+                            blockbusters.You can see ratings and reviews from your very own people like family, friends,
+                            colleagues and send your recommendations to them as well. It allows you to watch trailers &
+                            songs, share your experience on FB and even plan a movie date with friends</p>
+                        </aside>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="appLi">
+                  <div class="card 1">
+                    <div class="card_image"> <img src="./assets/img/bg/bg14.jpg" /> </div>
+                    <div class="contact">
+                      <div class="content flex-column">
+                        <img src="./assets/img/thithi.png" alt="">
+                        <aside>
+                          <div class="flex-column">
+                            <a href="https://itunes.apple.com/au/app/tithi/id1026862217" target="_blank"
+                              class="appLink">
+                              <h1 class="appName">Tithi</h1>
+                            </a>
+                            <span class="Label bg-red app_type">Appillary</span>
+                          </div>
+                          <p class="">Tithi ​is the cool app to keep track of all the Indian festivals, special holidays
+                            and astronomical events through the year. It provides interesting information on every
+                            festival/ event and also allows quick filtering on dates and search text. You can also add
+                            the event in your calendar and send a wish or an e-Card to friends and family.</p>
+                        </aside>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="appLi">
+                  <div class="card 1">
+                    <div class="card_image"> <img src="./assets/img/bg/bg13.jpg" /> </div>
+                    <div class="contact">
+                      <div class="content flex-column">
+                        <img src="./assets/img/wchats.png" alt="">
+                        <aside>
+                          <div class="flex-column">
+                            <a href="https://itunes.apple.com/in/app/workapps-chat/id1068382719" target="_blank"
+                              class="appLink">
+                              <h1 class="appName">WorkApps Chat​</h1>
+                            </a>
+                            <span class="Label bg-red app_type">Appillary</span>
+                          </div>
+                          <p class="">For all your one-on-one communication. It's Simple, Quick & Easy and has your
+                            colleagues automatically loaded
+                            when you login. It also connects you to the various departments of your Company with a
+                            single touch!</p>
+                        </aside>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="appLi">
+                  <div class="card 1">
+                    <div class="card_image"> <img src="./assets/img/bg/bg15.jpg" /> </div>
+                    <div class="contact">
+                      <div class="content flex-column">
+                        <img src="./assets/img/nucleaus.png" alt="">
+                        <aside>
+                          <div class="flex-column">
+                            <a href="https://itunes.apple.com/in/app/nucleus-premium-properties/id878540707?mt=8"
+                              target="_blank" class="appLink">
+                              <h1 class="appName">Nucleus​</h1>
+                            </a>
+                            <span class="Label purple-500 app_type">AppZoc</span>
+                          </div>
+                          <p class="">Nucleus Premium Properties is a Kochi-based builder and real estate developer with
+                            interests in building apartment, villa projects and developing land for construction.
+                            Nucleus App will give the users the latest news regarding new project features and other
+                            services of Nucleus Properties.</p>
+                        </aside>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </div>
+            </ul>
+          </div>
+
+        </section>
+
+        <section aria-labelledby="section-4-header">
+
+          <div class="border-top mr-3 py-2 pr-5"></div>
+          <div class="mr-3">
+            <a class="btn btn-large bt-blue" href="https://www.linkedin.com/in/anantha-krishnan-kg-b975b789"
+              target="_blank" role="button">LinkedIn</a>
+            <a class="btn btn-large btn-red" href="https://www.youtube.com/channel/UCgKLJiw10LMb-J2st3uBtRA"
+              target="_blank" role="button">YouTube</a>
+            <a class="btn btn-large btn-purple bt-green" href="https://medium.com/@Anantha1992" target="_blank"
+              role="button">Medium</a>
+            <a class="btn btn-large btn-purple bt-black" href="https://github.com/Ananthakrish" target="_blank"
+              role="button">Github</a>
+
+          </div>
+          <p class="mb-2"></p>
+        </section>
+        <section aria-labelledby="section-4-header">
+          <h3 id="section-4-header" class="Subhead-heading mb-2 text-normal">
+            Conferences
+          </h3>
+          <div class="border-top mr-3 py-2 pr-5"></div>
+          <div class="mr-3">
+            <span class="language-indicator position-relative d-inline-block green-400"></span>
+            <small class=" f5 text-gray-dark">Google I/O 2019, San Francisco</small>
+          </div>
+          <div class="mr-3">
+            <span class="language-indicator position-relative d-inline-block green-400"></span>
+            <small class="f5 text-gray-dark">IBM CTU 2016 (Madrid, Spain)</small>
+          </div>
+          <div class="mr-3">
+            <span class="language-indicator position-relative d-inline-block green-400"></span>
+            <small class="f5 text-gray-dark">IBM Developer Conference - 2016 (Bangalore, India)</small>
+          </div>
+          <div class="mr-3">
+            <span class="language-indicator position-relative d-inline-block green-400"></span>
+            <small class="f5 text-gray-dark">try! Swift India - 2017 (Bangalore , India)</small>
+          </div>
+        </section>
       </div>
+    </div>
+    <footer class="mb-6 pt-4 border-top">
+      <p class="mb-2">
+        Made with
+        <a href="http://primer.github.io" target="_blank">GitHub's Primer Design System CSS</a>, by
+        <a href="https://github.com/Ananthakrish" target="_blank">Anantha Krishnan K G</a>
+      </p>
+      <p class="mb-2">
+        The Primer design system is available for use under the MIT
+        <a href="https://github.com/primer/primer/blob/master/LICENSE" target="_blank">license</a>. Copyright GitHub
+        2016 - 2019.
+      </p>
+      <p class="mb-2">
+        Primer has been created and is maintained by GitHub's
+        <a href="https://github.com/orgs/primer/people" target="_blank">Design Systems team</a>.
+      </p>
+      <p class="mb-2">
+        All the images from
+        <a href="https://unsplash.com/" target="_blank">unsplash</a>.
+      </p>
     </footer>
+  </div>
+</body>
 
-  </body>
 </html>
