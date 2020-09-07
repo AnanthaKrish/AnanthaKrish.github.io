@@ -14,19 +14,11 @@
 
   <link rel="apple-touch-icon" href="./assets/favicon/favicon.svg" />
   <link rel="icon" href="./assets/favicon/favicon.svg" />
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script> -->
   <link href="./css/primer-core.css" rel="stylesheet" />
   <link href="./css/primer-product.css" rel="stylesheet" />
   <link href="./css/style.css" rel="stylesheet" />
-  
-
-
   <meta name="google-site-verification" content="k5-QI13kbe-ccps7Uvky8b_3UMvCTBeudrwl5r07uos" />
 </head>
 
@@ -152,6 +144,7 @@
             </a>
             <a href="#apps" title="Apps" class="UnderlineNav-item">Apps
             </a>
+           
           </div>
         </nav>
         <section class="mt-4" aria-labelledby="section-1-header">
@@ -421,146 +414,240 @@
           <h3 id="section-3-header" class="Subhead-heading mb-2 text-normal">
             Apps
           </h3>
-                   
-          <div id="apps">
+          <div class="border-top py-3 pr-3">
+            <ul class="d-flex flex-column list-style-none mb-1">
+              <div class="d-flex flex-wrap flex-justify-between pinned-list">
 
-            <ul id="list" class="middle width1020">
-
-              <a href="https://github.com/ibm-bluemix-mobile-services">
-                <div class="webapp top" data-toggle="popover" title="Responsibility" data-content="Leads the SDK team for IBM Cloud Push notifications service and IBM App Foundation service. I am contributing to the IBM Cloud Open Source SDKs and Samples.Apps include BizkaiUP, Weather Gods, etc.">
-                  <img src="./assets/img/ibm.png" alt="IBM Apps&SDKs"></img><div>
-                    <h4>IBM Apps & SDKs</h4>
-                    <div class="category">Reference</div>
-                  <div class="category">
-                    <span class="summary-toolkit p-1 interestList rounded-1 my-1 mr-1 text-white f6 blue-800">@IBM ISL</span>
-                  </div>
-                </div>
-                </div>
-                </a>
-
-
-              <a href="https://itunes.apple.com/in/app/qreads/id1445674458?ls=1&mt=8">
-                <div class="webapp top" data-toggle="popover" title="App details" data-content="QReads - An app to keep all your bookmarks. You can share the reading item to the app from the host app's share option. Copy and add the URL from the new option in QReads. Set Custom reminders/Notifications. Use Siri for getting the number of bookmarks or use today widget.">
-                  <img src="./assets/img/qreads.png" alt="QREADS"></img><div>
-                    <h4>QREADS</h4>
-                    <div class="category">Reference</div>
-                  <div class="category">
-                    <span class="rate summary-toolkit p-2 rounded-1 my-1y mr-1 text-white text-bold f6 gray-700"># Side Projects</span>
-                  </div>
-                </div>
-                </div>
-                </a>
-
-                <a href="https://apps.apple.com/ag/app/ecards-store-credit-cards/id1473634430">
-                  <div class="webapp top" data-toggle="popover" title="App details" data-content="eCards is the one place for storing credit cards, debit cards, and PayPal links. No need to check your wallet all the time for card details.">
-                    <img src="./assets/img/eCards.png" alt="eCards"></img><div>
-                      <h4>eCards</h4>
-                      <div class="category">Reference</div>
-                    <div class="category">
-                      <span class="rate summary-toolkit p-2 rounded-1 my-1y mr-1 text-white text-bold f6 gray-700"># Side Projects</span>
+                <li class="appLi">
+                  <div class="card 1">
+                    <div class="card_image"> <img src="./assets/img/bg/bg16.jpg" /> </div>
+                    <div class="contact">
+                      <div class="content flex-column">
+                        <img src="./assets/img/ibm.png" alt="">
+                        <aside>
+                          <div class="flex-column">
+                            <a href="https://github.com/ibm-bluemix-mobile-services" target="_blank" class="appLink">
+                              <h1 class="appName">IBM Apps&SDKs </h1>
+                            </a>
+                            <span class="Label bg-green app_type">IBM ISL</span>
+                          </div>
+                          <p>I am contributing to the IBM Cloud Open Source SDKs and Samples . I have my own repos as
+                            well for the personal
+                            development.</p>
+                        </aside>
+                      </div>
                     </div>
                   </div>
+                </li>
+
+                <li class="appLi">
+                  <div class="card 1">
+                    <div class="card_image"> <img src="./assets/img/bg/bg5.jpg" /> </div>
+                    <div class="contact">
+                      <div class="content flex-column">
+                        <img src="./assets/img/eCards.png" alt="">
+                        <aside>
+                          <div class="flex-column">
+                            <a href="https://apps.apple.com/ag/app/ecards-store-credit-cards/id1473634430" target="_blank"
+                              class="appLink">
+                              <h1 class="appName">eCards </h1>
+                            </a>
+                            <span class="Label bg-blue app_type">Personal</span>
+                          </div>
+                          <p>Store all your bookmarks at one place and read it at anytime.</p>
+                        </aside>
+                      </div>
+                    </div>
                   </div>
-                  </a>
+                </li>
 
-
-              <a href="https://itunes.apple.com/in/app/bmi-tracker/id1459398743">
-                <div class="webapp top" data-toggle="popover" title="App details" data-content="BMITracker will help you to easily calculate and manage your BMI. Calculate in different Metrics. Share it with your friends">
-                  <img src="./assets/img/bmitracker.png" alt="BMI Tracker"></img><div>
-                    <h4>BMI Tracker</h4>
-                    <div class="category">Health & Fitness</div>
-                  <div class="category">
-                    <span class="rate summary-toolkit p-2 rounded-1 my-1y mr-1 text-white text-bold f6 gray-700"># Side Projects</span>
+                <li class="appLi">
+                  <div class="card 1">
+                    <div class="card_image"> <img src="./assets/img/bg/bg.jpg" /> </div>
+                    <div class="contact">
+                      <div class="content flex-column">
+                        <img src="./assets/img/qreads.png" alt="">
+                        <aside>
+                          <div class="flex-column">
+                            <a href="https://itunes.apple.com/in/app/qreads/id1445674458?ls=1&mt=8" target="_blank"
+                              class="appLink">
+                              <h1 class="appName">QREADS </h1>
+                            </a>
+                            <span class="Label bg-blue app_type">Personal</span>
+                          </div>
+                          <p>Store all your bookmarks at one place and read it at anytime.</p>
+                        </aside>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                </div>
-                </a>
+                </li>
 
-              <a href="https://itunes.apple.com/in/app/pushsender/id1423663430">
-                <div class="webapp top" data-toggle="popover" title="App details" data-content="A mac application to send push notifications to different platforms. This app was created to learn macOS application development.">
-                  <img src="./assets/img/pushsender.png" alt="PushSender​"></img><div>
-                    <h4>PushSender​</h4>
-                    <div class="category">Utilities & Productivity</div>
-                  <div class="category">
-                    <span class="rate summary-toolkit p-2 rounded-1 my-1y mr-1 text-white text-bold f6 gray-700"># Side Projects</span>
+                <li class="appLi">
+                  <div class="card 1">
+                    <div class="card_image"> <img src="./assets/img/bg/bg4.jpg" /> </div>
+                    <div class="contact">
+                      <div class="content flex-column">
+                        <img src="./assets/img/bmitracker.png" alt="">
+                        <aside>
+                          <div class="flex-column">
+                            <a href="https://itunes.apple.com/in/app/bmi-tracker/id1459398743" target="_blank"
+                              class="appLink">
+                              <h1 class="appName">BMI Tracker</h1>
+                            </a>
+                            <span class="Label bg-blue app_type">Personal</span>
+                          </div>
+                          <p>An application to get your BMI checked.</p>
+                        </aside>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                </div>
-                </a>
+                </li>
 
-              <a href="https://itunes.apple.com/in/app/workapps/id1046809441">
-                <div class="webapp top" data-toggle="popover" title="App details" data-content="WorkApps is a work management platform where users can manage their tasks, collaborate on projects, communicate ​ e​ ffectively with their teams and track & extract reports on">
-                  <img src="./assets/img/workapps.png" alt="WorkApps​"></img><div>
-                    <h4>WorkApps​</h4>
-                    <div class="category">Business & Productivity</div>
-                  <div class="category">
-                    <span class="rate summary-toolkit p-2 rounded-1 my-1 mr-1 text-white  text-bold f6 purple-500">@Appillary</span>
+                <li class="appLi">
+                  <div class="card 1">
+                    <div class="card_image"> <img src="./assets/img/bg/bg7.jpg" /> </div>
+                    <div class="contact">
+                      <div class="content flex-column">
+                        <img src="./assets/img/pushsender.png" alt="">
+                        <aside>
+                          <div class="flex-column">
+                            <a href="https://itunes.apple.com/in/app/pushsender/id1423663430?mt=12" target="_blank"
+                              class="appLink">
+                              <h1 class="appName">PushSender​</h1>
+                            </a>
+                            <span class="Label bg-blue app_type">Personal</span>
+                          </div>
+                          <p>A mac application to send push notifications</p>
+                        </aside>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                </div>
-                </a>
+                </li>
 
-              <a href="https://itunes.apple.com/in/app/moviebuddy/id1030273055">
-                <div class="webapp top" data-toggle="popover" title="App details" data-content="MovieBuddy k​eep you updated with upcoming movies,latest releases and
-                blockbusters.You can see ratings and reviews from your very own people like family, friends,
-                colleagues and send your recommendations to them as well. It allows you to watch trailers &
-                songs, share your experience on FB and even plan a movie date with friends">
-                  <img src="./assets/img/moviewbuddy.png" alt="MovieBuddy"></img><div>
-                    <h4>MovieBuddy</h4>
-                    <div class="category">Entertainment</div>
-                  <div class="category">
-                    <span class="rate summary-toolkit p-2 rounded-1 my-1 mr-1 text-white  text-bold f6 purple-500">@Appillary</span>
+                <li class="appLi">
+                  <div class="card 1">
+                    <div class="card_image"> <img src="./assets/img/bg/bg1.jpg" /> </div>
+                    <div class="contact">
+                      <div class="content flex-column">
+                        <img src="./assets/img/workapps.png" alt="">
+                        <aside>
+                          <div class="flex-column">
+                            <a href="https://itunes.apple.com/in/app/workapps/id1046809441" target="_blank"
+                              class="appLink">
+                              <h1 class="appName">WorkApps​</h1>
+                            </a>
+                            <span class="Label bg-red app_type">Appillary</span>
+                          </div>
+                          <p class="">WorkApps is a work management platform where users can manage their tasks,
+                            collaborate on projects, communicate ​ e​ ffectively with their teams and track & extract
+                            reports on key metrics, which help stakeholders make the right decisions.</p>
+                        </aside>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                </div>
-                </a>
+                </li>
 
-              <a href="https://itunes.apple.com/au/app/tithi/id1026862217">
-                <div class="webapp top" data-toggle="popover" title="App details" data-content="Tithi ​is the cool app to keep track of all the Indian festivals, special holidays
-                and astronomical events through the year. It provides interesting information on every
-                festival/ event and also allows quick filtering on dates and search text. You can also add
-                the event in your calendar and send a wish or an e-Card to friends and family.">
-                  <img src="./assets/img/thithi.png" alt="Tithi"></img><div>
-                    <h4>Tithi</h4>
-                    <div class="category">Social Networking</div>
-                  <div class="category">
-                    <span class="rate summary-toolkit p-2 rounded-1 my-1 mr-1 text-white  text-bold f6 purple-500">@Appillary</span>
+                <li class="appLi">
+                  <div class="card 1">
+                    <div class="card_image"> <img src="./assets/img/bg/bg5.jpg" /> </div>
+                    <div class="contact">
+                      <div class="content flex-column">
+                        <img src="./assets/img/moviewbuddy.png" alt="">
+                        <aside>
+                          <div class="flex-column">
+                            <a href="https://itunes.apple.com/in/app/moviebuddy/id1030273055" target="_blank"
+                              class="appLink">
+                              <h1 class="appName">MovieBuddy</h1>
+                            </a>
+                            <span class="Label bg-red app_type">Appillary</span>
+                          </div>
+                          <p class="">MovieBuddy k​eep you updated with upcoming movies,latest releases and
+                            blockbusters.You can see ratings and reviews from your very own people like family, friends,
+                            colleagues and send your recommendations to them as well. It allows you to watch trailers &
+                            songs, share your experience on FB and even plan a movie date with friends</p>
+                        </aside>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                </div>
-                </a>
+                </li>
 
-
-              <a href="https://itunes.apple.com/in/app/workapps-chat/id1068382719">
-                <div class="webapp top" data-toggle="popover" title="App details" data-content="For all your one-on-one communication. It's Simple, Quick & Easy and has your
-                colleagues automatically loaded when you login. It also connects you to the various departments of your Company with a single touch!">
-                  <img src="./assets/img/wchats.png" alt="WorkApps Chat"></img><div>
-                    <h4>WorkApps Chat</h4>
-                    <div class="category">Business & Productivity</div>
-                  <div class="category">
-                    <span class="rate summary-toolkit p-2 rounded-1 my-1 mr-1 text-white  text-bold f6 purple-500">@Appillary</span>
+                <li class="appLi">
+                  <div class="card 1">
+                    <div class="card_image"> <img src="./assets/img/bg/bg14.jpg" /> </div>
+                    <div class="contact">
+                      <div class="content flex-column">
+                        <img src="./assets/img/thithi.png" alt="">
+                        <aside>
+                          <div class="flex-column">
+                            <a href="https://itunes.apple.com/au/app/tithi/id1026862217" target="_blank"
+                              class="appLink">
+                              <h1 class="appName">Tithi</h1>
+                            </a>
+                            <span class="Label bg-red app_type">Appillary</span>
+                          </div>
+                          <p class="">Tithi ​is the cool app to keep track of all the Indian festivals, special holidays
+                            and astronomical events through the year. It provides interesting information on every
+                            festival/ event and also allows quick filtering on dates and search text. You can also add
+                            the event in your calendar and send a wish or an e-Card to friends and family.</p>
+                        </aside>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                </div>
-                </a>
+                </li>
 
-
-              <a href="https://itunes.apple.com/in/app/nucleus-premium-properties/id878540707?mt=8">
-                <div class="webapp top" data-toggle="popover" title="App details" data-content="Nucleus Premium Properties is a Kochi-based builder and real estate developer with interests in building apartment, villa projects and developing land for construction.
-                Nucleus App will give the users the latest news regarding new project features and other services of Nucleus Properties.">
-                  <img src="./assets/img/nucleaus.png" alt="Nucleus​"></img><div>
-                    <h4>Nucleus​</h4>
-                    <div class="category">Real estate & LifeStyle</div>
-                  <div class="category">
-                    <span class="rate summary-toolkit p-2 rounded-1 my-1 mr-1 text-white text-bold f6 red-600">@AppZoc</span>
+                <li class="appLi">
+                  <div class="card 1">
+                    <div class="card_image"> <img src="./assets/img/bg/bg13.jpg" /> </div>
+                    <div class="contact">
+                      <div class="content flex-column">
+                        <img src="./assets/img/wchats.png" alt="">
+                        <aside>
+                          <div class="flex-column">
+                            <a href="https://itunes.apple.com/in/app/workapps-chat/id1068382719" target="_blank"
+                              class="appLink">
+                              <h1 class="appName">WorkApps Chat​</h1>
+                            </a>
+                            <span class="Label bg-red app_type">Appillary</span>
+                          </div>
+                          <p class="">For all your one-on-one communication. It's Simple, Quick & Easy and has your
+                            colleagues automatically loaded
+                            when you login. It also connects you to the various departments of your Company with a
+                            single touch!</p>
+                        </aside>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                </div>
-                </a>
+                </li>
+
+                <li class="appLi">
+                  <div class="card 1">
+                    <div class="card_image"> <img src="./assets/img/bg/bg15.jpg" /> </div>
+                    <div class="contact">
+                      <div class="content flex-column">
+                        <img src="./assets/img/nucleaus.png" alt="">
+                        <aside>
+                          <div class="flex-column">
+                            <a href="https://itunes.apple.com/in/app/nucleus-premium-properties/id878540707?mt=8"
+                              target="_blank" class="appLink">
+                              <h1 class="appName">Nucleus​</h1>
+                            </a>
+                            <span class="Label purple-500 app_type">AppZoc</span>
+                          </div>
+                          <p class="">Nucleus Premium Properties is a Kochi-based builder and real estate developer with
+                            interests in building apartment, villa projects and developing land for construction.
+                            Nucleus App will give the users the latest news regarding new project features and other
+                            services of Nucleus Properties.</p>
+                        </aside>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </div>
             </ul>
           </div>
+
         </section>
-        
+
         <section aria-labelledby="section-4-header">
 
           <div class="border-top mr-3 py-2 pr-5"></div>
@@ -622,12 +709,6 @@
       </p>
     </footer>
   </div>
-
-  <!-- <div class="bs-example">
-    <button type="button" class="btn btn-primary" data-toggle="popover" title="Modal Short Text" data-content="You gotta go through it to see there ain't nothing to it. Listen to the silence.">Hover 1</button>
- </div> -->
 </body>
-<script  src="./script.js"></script>
-
 
 </html>
