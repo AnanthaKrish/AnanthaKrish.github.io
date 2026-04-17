@@ -1,0 +1,797 @@
+/* ——————————————————————————————————————————
+   Brutalist portfolio styles
+   Ported from the design handoff bundle.
+   Scoped to classes used only by the Portfolio component.
+   —————————————————————————————————————————— */
+
+:root {
+  --b-bg: #f4f3ee;
+  --b-paper: #ffffff;
+  --b-ink: #0a0a0a;
+  --b-ink-soft: #3a3a3a;
+  --b-ink-mute: #6b6b6b;
+  --b-ink-faint: #a8a8a8;
+  --b-rule: #0a0a0a;
+  --b-hair: #d9d7cf;
+  --b-accent: oklch(0.45 0.05 280); /* slate */
+  --b-accent-contrast: #ffffff;
+  --b-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --b-sans: "IBM Plex Sans", system-ui, sans-serif;
+}
+
+.brutalist,
+.brutalist *,
+.brutalist *::before,
+.brutalist *::after {
+  box-sizing: border-box;
+}
+
+.brutalist {
+  background: var(--b-bg);
+  color: var(--b-ink);
+  font-family: var(--b-mono);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+html:has(.brutalist) {
+  scroll-behavior: smooth;
+  background: var(--b-bg);
+}
+
+.brutalist ::selection {
+  background: var(--b-accent);
+  color: var(--b-accent-contrast);
+}
+
+.brutalist a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ——— top strip ——— */
+.brutalist .strip {
+  background: var(--b-ink);
+  color: #fff;
+  padding: 8px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  border-bottom: 2px solid var(--b-ink);
+}
+
+.brutalist .strip .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #6ee7b7;
+  margin-right: 8px;
+  vertical-align: middle;
+  animation: b-pulse 2s ease-in-out infinite;
+}
+
+@keyframes b-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.brutalist .strip .right {
+  display: flex;
+  gap: 18px;
+}
+
+.brutalist .strip a:hover {
+  color: #9ae6b4;
+}
+
+/* ——— nav ——— */
+.brutalist .nav {
+  background: var(--b-paper);
+  border-bottom: 2px solid var(--b-ink);
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 33px;
+  z-index: 29;
+}
+
+.brutalist .nav .logo {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.brutalist .nav .logo .sq {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: var(--b-ink);
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.brutalist .nav-links {
+  display: flex;
+  gap: 28px;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.brutalist .nav-links a {
+  position: relative;
+  padding: 4px 2px;
+  background: none;
+  border: none;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  cursor: pointer;
+  color: inherit;
+}
+
+.brutalist .nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  background: var(--b-ink);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.brutalist .nav-links a:hover::after {
+  transform: scaleX(1);
+}
+
+.brutalist .nav .cta {
+  border: 2px solid var(--b-ink);
+  padding: 6px 14px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: background 0.15s, color 0.15s;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+  font-family: inherit;
+}
+
+.brutalist .nav .cta:hover {
+  background: var(--b-ink);
+  color: #fff;
+}
+
+.brutalist section {
+  border-bottom: 2px solid var(--b-ink);
+}
+
+/* ——— hero ——— */
+.brutalist .mega {
+  padding: 56px 24px 32px;
+  background: var(--b-paper);
+}
+
+.brutalist .mega .kicker {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+  color: var(--b-ink-mute);
+}
+
+.brutalist .mega .kicker b {
+  color: var(--b-ink);
+  font-weight: 600;
+}
+
+.brutalist .mega h1 {
+  font-family: var(--b-mono);
+  font-size: clamp(56px, 13vw, 200px);
+  line-height: 0.86;
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.brutalist .mega h1 .stroke {
+  -webkit-text-stroke: 2px var(--b-ink);
+  color: transparent;
+}
+
+.brutalist .mega h1 .accent {
+  color: var(--b-accent);
+}
+
+.brutalist .mega .sub {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 44px;
+  padding-top: 20px;
+  border-top: 1px solid var(--b-ink);
+  font-size: 13px;
+}
+
+.brutalist .mega .sub .k {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--b-ink-mute);
+  margin-bottom: 6px;
+}
+
+.brutalist .mega .sub .v {
+  font-size: 14px;
+  color: var(--b-ink);
+}
+
+/* ——— section title ——— */
+.brutalist .section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 24px;
+  border-bottom: 1px solid var(--b-ink);
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+
+.brutalist .section-title-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
+.brutalist .section-title h2 {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 700;
+  margin: 20px 0 0;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.brutalist .section-title .count {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  color: var(--b-ink-mute);
+}
+
+/* ——— about ——— */
+.brutalist .about {
+  background: var(--b-paper);
+  padding-bottom: 48px;
+}
+
+.brutalist .about .body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 32px 24px 0;
+}
+
+.brutalist .about .body p {
+  font-family: var(--b-sans);
+  font-size: 17px;
+  line-height: 1.55;
+  margin: 0 0 14px;
+  color: var(--b-ink-soft);
+}
+
+.brutalist .about .body p b {
+  color: var(--b-ink);
+}
+
+.brutalist .about .stats {
+  padding: 32px 24px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--b-hair);
+  margin: 40px 24px 0;
+}
+
+.brutalist .about .stat {
+  padding: 20px 0;
+  border-right: 1px solid var(--b-hair);
+  padding-right: 20px;
+}
+
+.brutalist .about .stat:last-child {
+  border-right: none;
+}
+
+.brutalist .about .stat .n {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.brutalist .about .stat .l {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--b-ink-mute);
+  margin-top: 6px;
+}
+
+/* ——— projects ——— */
+.brutalist .projects {
+  background: var(--b-bg);
+}
+
+.brutalist .proj-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid var(--b-ink);
+}
+
+.brutalist .proj {
+  padding: 28px 24px;
+  border-right: 2px solid var(--b-ink);
+  border-bottom: 2px solid var(--b-ink);
+  background: var(--b-paper);
+  position: relative;
+  transition: background 0.15s;
+  display: block;
+}
+
+.brutalist .proj:nth-child(2n) {
+  border-right: none;
+}
+
+.brutalist .proj:nth-last-child(-n + 2) {
+  border-bottom: none;
+}
+
+.brutalist .proj:hover {
+  background: #f9f8f3;
+}
+
+.brutalist .proj .n {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 11px;
+  color: var(--b-ink-mute);
+  letter-spacing: 0.1em;
+}
+
+.brutalist .proj .title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  margin: 8px 0 4px;
+}
+
+.brutalist .proj .title .arr {
+  display: inline-block;
+  margin-left: 8px;
+  transition: transform 0.2s ease;
+}
+
+.brutalist .proj:hover .title .arr {
+  transform: translate(4px, -4px);
+}
+
+.brutalist .proj .tag {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--b-ink-mute);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.brutalist .proj .desc {
+  font-family: var(--b-sans);
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--b-ink-soft);
+  margin: 0 0 20px;
+}
+
+.brutalist .proj .row {
+  display: flex;
+  gap: 14px;
+  font-size: 11px;
+  border-top: 1px dashed var(--b-ink);
+  padding-top: 12px;
+  margin-top: 20px;
+  color: var(--b-ink-mute);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+}
+
+.brutalist .proj .row span {
+  white-space: nowrap;
+}
+
+.brutalist .proj.invert {
+  background: var(--b-ink);
+  color: #fff;
+}
+
+.brutalist .proj.invert:hover {
+  background: #1a1a1a;
+}
+
+.brutalist .proj.invert .tag {
+  color: #aaa;
+}
+
+.brutalist .proj.invert .desc {
+  color: #d0d0d0;
+}
+
+.brutalist .proj.invert .row {
+  color: #aaa;
+  border-top-color: #fff;
+}
+
+.brutalist .proj.invert .n {
+  color: #888;
+}
+
+.brutalist .proj.accent {
+  background: var(--b-accent);
+  color: #fff;
+}
+
+.brutalist .proj.accent .tag,
+.brutalist .proj.accent .desc,
+.brutalist .proj.accent .row,
+.brutalist .proj.accent .n {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.brutalist .proj.accent .row {
+  border-top-color: #fff;
+}
+
+/* ——— writing ——— */
+.brutalist .writing {
+  background: var(--b-paper);
+}
+
+.brutalist .writing .list {
+  border-top: 1px solid var(--b-ink);
+}
+
+.brutalist .writing .row {
+  display: grid;
+  grid-template-columns: 130px 1fr 140px 80px;
+  gap: 20px;
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--b-hair);
+  align-items: center;
+  transition: background 0.12s, color 0.12s;
+  cursor: pointer;
+}
+
+.brutalist .writing .row:last-child {
+  border-bottom: none;
+}
+
+.brutalist .writing .row .d {
+  font-size: 12px;
+  color: var(--b-ink-mute);
+  letter-spacing: 0.08em;
+}
+
+.brutalist .writing .row .t {
+  font-family: var(--b-sans);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--b-ink);
+}
+
+.brutalist .writing .row .cat {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--b-ink-mute);
+}
+
+.brutalist .writing .row .x {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--b-ink-mute);
+  text-align: right;
+}
+
+.brutalist .writing .row:hover {
+  background: var(--b-ink);
+  color: #fff;
+}
+
+.brutalist .writing .row:hover .d,
+.brutalist .writing .row:hover .x,
+.brutalist .writing .row:hover .cat {
+  color: #a8a8a8;
+}
+
+.brutalist .writing .row:hover .t {
+  color: #fff;
+}
+
+.brutalist .writing .row:hover .t::after {
+  content: " →";
+  color: #fff;
+}
+
+.brutalist .writing .more {
+  padding: 16px 24px;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-top: 2px solid var(--b-ink);
+  color: var(--b-ink-mute);
+  cursor: pointer;
+  transition: background 0.15s;
+  display: block;
+}
+
+.brutalist .writing .more:hover {
+  background: var(--b-ink);
+  color: #fff;
+}
+
+/* ——— work ——— */
+.brutalist .work {
+  background: var(--b-bg);
+}
+
+.brutalist .work .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid var(--b-ink);
+}
+
+.brutalist .work .job {
+  padding: 28px 24px;
+  border-right: 2px solid var(--b-ink);
+  border-bottom: 2px solid var(--b-ink);
+  background: var(--b-paper);
+  font-family: var(--b-sans);
+}
+
+.brutalist .work .job:nth-child(2n) {
+  border-right: none;
+}
+
+.brutalist .work .job:nth-last-child(-n + 2) {
+  border-bottom: none;
+}
+
+.brutalist .work .yrs {
+  font-family: var(--b-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--b-ink-mute);
+}
+
+.brutalist .work .co {
+  font-family: var(--b-mono);
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 8px;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.brutalist .work .role {
+  font-size: 15px;
+  color: var(--b-ink-soft);
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.brutalist .work .stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 16px;
+  font-family: var(--b-mono);
+}
+
+.brutalist .work .stack span {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid var(--b-ink);
+  padding: 2px 8px;
+}
+
+/* ——— contact ——— */
+.brutalist .contact {
+  background: var(--b-ink);
+  color: #fff;
+  border-bottom: none;
+}
+
+.brutalist .contact .inner {
+  padding: 56px 24px;
+}
+
+.brutalist .contact h3 {
+  font-family: var(--b-mono);
+  font-size: clamp(48px, 10vw, 140px);
+  line-height: 0.88;
+  margin: 0 0 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+}
+
+.brutalist .contact h3 .stroke {
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+
+.brutalist .contact .row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 24px;
+  border-top: 1px solid #fff;
+}
+
+.brutalist .contact .mail {
+  font-size: clamp(20px, 3vw, 32px);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.brutalist .contact .mail:hover {
+  color: #9ae6b4;
+}
+
+.brutalist .contact .links {
+  display: flex;
+  gap: 28px;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brutalist .contact .links a {
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: border-color 0.15s;
+}
+
+.brutalist .contact .links a:hover {
+  border-bottom-color: #fff;
+}
+
+/* ——— footer ——— */
+.brutalist .foot {
+  background: var(--b-ink);
+  color: #888;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-top: 1px solid #222;
+}
+
+/* ——— responsive ——— */
+@media (max-width: 900px) {
+  .brutalist .mega .sub {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .brutalist .about .body {
+    grid-template-columns: 1fr;
+  }
+  .brutalist .about .stats {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 32px 24px 0;
+  }
+  .brutalist .about .stat:nth-child(2) {
+    border-right: none;
+  }
+  .brutalist .proj-grid {
+    grid-template-columns: 1fr;
+  }
+  .brutalist .proj {
+    border-right: none !important;
+  }
+  .brutalist .proj:nth-last-child(-n + 2) {
+    border-bottom: 2px solid var(--b-ink);
+  }
+  .brutalist .proj:last-child {
+    border-bottom: none;
+  }
+  .brutalist .writing .row {
+    grid-template-columns: 90px 1fr 60px;
+    gap: 12px;
+  }
+  .brutalist .writing .row .cat {
+    display: none;
+  }
+  .brutalist .work .grid {
+    grid-template-columns: 1fr;
+  }
+  .brutalist .work .job {
+    border-right: none !important;
+    border-bottom: 2px solid var(--b-ink) !important;
+  }
+  .brutalist .work .job:last-child {
+    border-bottom: none !important;
+  }
+  .brutalist .contact .row-2 {
+    grid-template-columns: 1fr;
+  }
+  .brutalist .contact .links {
+    justify-content: flex-start;
+  }
+  .brutalist .nav-links {
+    display: none;
+  }
+  .brutalist .strip {
+    font-size: 10px;
+  }
+  .brutalist .strip .right .loc-long {
+    display: none;
+  }
+}
+
+/* ——— cursor dot ——— */
+.brutalist .cursor-dot {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: var(--b-accent);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  transition: width 0.15s, height 0.15s;
+  mix-blend-mode: difference;
+  display: none;
+  top: 0;
+  left: 0;
+}
+
+@media (hover: hover) {
+  .brutalist .cursor-dot {
+    display: block;
+  }
+}
