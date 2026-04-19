@@ -162,7 +162,7 @@ export function Portfolio() {
           }}
         >
           <span className="sq" />
-          ANANTHAKRISH
+          ANANTHA K
         </a>
         <div className="nav-links">
           <a
