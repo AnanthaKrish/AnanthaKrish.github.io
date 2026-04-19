@@ -225,9 +225,9 @@ export function Portfolio() {
           <h1>
             {firstName}
             <br />
-            <span className="stroke">WRITES</span>
+            <span className="stroke">DESIGNS</span>
             <br />
-            <span className="accent">CODE.</span>
+            <span className="accent">SYSTEMS.</span>
           </h1>
           <div className="sub">
             <div>
