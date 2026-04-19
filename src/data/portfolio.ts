@@ -15,12 +15,12 @@ export const portfolioData = {
   },
   about: {
     paragraphs: [
-      "I'm a seasoned senior software engineer and tech lead with over a decade of experience in full software development, specializing in mobile engineering while leveraging robust backend expertise in Golang,Python etc. I excel at driving complex mobile challenges, from architecting scalable frameworks to optimizing performance for high-impact user experiences.",
-      "With deep expertise in Swift, SwiftUI, Objective-C, Kotlin, and cross-platform tools, I lead teams to deliver secure, data-driven features using MVVM architectures, multithreading, and backend integrations like REST, GraphQL, and gRPC. My focus is on building reusable systems that prioritize efficiency, privacy, and seamless scalability.",
-      "Outside of engineering, I'm passionate about the intersection of mobile and AI spaces, particularly LLMs, where I explore innovative ways to enhance user interactions through intelligent, on-device capabilities - always eager to mentor and contribute to cutting-edge projects.",
+      "I'm a senior engineer and tech lead with 11+ years designing and shipping software across mobile and backend. My work centers on architecture - turning ambiguous problems into durable systems and scaling them from prototype to production without losing the thread on performance, privacy, or UX.",
+      "I go deep on mobile (Swift, SwiftUI, Objective-C, Kotlin, and cross-platform frameworks) and work comfortably on the backend in Go and Python, integrating over REST, GraphQL, and gRPC. I lead teams around MVVM and modular architectures, reusable components, and the concurrency and data-flow patterns that keep large codebases maintainable as they grow.",
+      "These days, much of my curiosity sits at the intersection of mobile and AI - especially on-device LLMs and agentic workflows — exploring how intelligent systems can reshape the way people interact with software. I enjoy mentoring, writing, and contributing to teams building something genuinely new.",
     ],
     stats: {
-      experience: "10+",
+      experience: "11+",
       experienceLabel: "Years Experience",
       projects: "100+",
       projectsLabel: "Projects Completed",
