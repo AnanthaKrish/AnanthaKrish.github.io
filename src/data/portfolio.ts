@@ -103,7 +103,7 @@ export const portfolioData = {
       company: "TikTok Inc.",
       period: "2023 - Present",
       description:
-        "Tech Lead and Senior Software Engineer, leading the Mobile & Backend Privacy and Security team working on TikTok and family apps",
+        "Tech Lead and Senior Software Engineer, leading the Mobile & Backend Feed Algorithm Safety, Privacy and Security team working on TikTok and family apps",
     },
     {
       title: "Software Engineer",
