@@ -64,7 +64,7 @@ export const portfolioData = {
     {
       title: "TikTok Family Apps (TikTok, Coin, Lite etc)",
       description:
-        "Leading Privacy and Transparency product features and engineering modules",
+        "Leading Feed Safety algorithm, Privacy and Transparency product features and engineering modules",
       technologies: ["iOS", "Android", "Lynx"],
       demo: "https://www.tiktok.com/en/",
     },
